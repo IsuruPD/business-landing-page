@@ -87,7 +87,7 @@
   >
     <nav
       id="navScroll"
-      class="navbar navbar-dark bg-black fixed-top px-vw-5"
+      class="navbar navbar-light bg-light fixed-top px-vw-5"
       tabindex="0"
     >
       <div class="container">
@@ -1118,21 +1118,38 @@
       });
     </script>
     <script>
-      // Theme toggle logic
-      const toggleInput = document.getElementById('toggle');
+      // Select the toggle and body
+      const themeToggle = document.getElementById('toggle');
       const body = document.body;
-      // Set initial state based on system preference or previous choice
-      if (localStorage.getItem('theme') === 'light') {
-        body.classList.add('light-mode');
-        toggleInput.checked = true;
-      }
-      toggleInput.addEventListener('change', function() {
-        if (this.checked) {
-          body.classList.add('light-mode');
-          localStorage.setItem('theme', 'light');
+      const navbar = document.querySelector('.navbar');
+
+      function setTheme(isChecked) {
+        if (isChecked) {
+          body.classList.add('bg-black', 'text-white');
+          body.classList.remove('bg-light', 'text-dark');
+          navbar.classList.add('navbar-dark', 'bg-black');
+          navbar.classList.remove('navbar-light', 'bg-light');
         } else {
-          body.classList.remove('light-mode');
-          localStorage.setItem('theme', 'dark');
+          body.classList.add('bg-light', 'text-dark');
+          body.classList.remove('bg-black', 'text-white');
+          navbar.classList.add('navbar-light', 'bg-light');
+          navbar.classList.remove('navbar-dark', 'bg-black');
+        }
+      }
+
+      themeToggle.addEventListener('change', function() {
+        setTheme(this.checked);
+        localStorage.setItem('theme', this.checked ? 'dark' : 'light');
+      });
+
+      window.addEventListener('DOMContentLoaded', function() {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light') {
+          themeToggle.checked = false;
+          setTheme(false);
+        } else {
+          themeToggle.checked = true;
+          setTheme(true);
         }
       });
     </script>
