@@ -10060,7 +10060,7 @@ img {
   --width: 30px;
 
   cursor: pointer;
-
+  border: 1px solid #fff9c4;
   position: relative;
   display: inline-block;
 
@@ -10083,7 +10083,7 @@ img {
 
 .toggle-cont .toggle-input:checked + .toggle-label {
   background-color: #41434400;
-  /* border: 1px solid #3d6970; */
+  border: 1px solid #3d6970;
   border-bottom: 0;
   /* Blue gradient for toggled state */
   background-image: radial-gradient(
