@@ -1,68 +1,477 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="h-100" lang="en">
-
   <head>
-      <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
-  <meta name="author" content="Holger Koenemann">
-  <meta name="generator" content="Eleventy v2.0.0">
-  <meta name="HandheldFriendly" content="true">
-  <title>Register a new account</title>
-  <link rel="stylesheet" href="css/theme.min.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="A well made and handcrafted Bootstrap 5 template"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png" />
+    <meta name="author" content="Holger Koenemann" />
+    <meta name="generator" content="Eleventy v2.0.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>SapiX - About Us</title>
+    <link rel="stylesheet" href="css/theme.min.css" />
+    <link rel="stylesheet" href="css/theme.css" />
 
+    <style>
+      /* inter-300 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(""), url("fonts/inter-v12-latin-300.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
+      /* inter-400 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local(""),
+          url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(""), url("fonts/inter-v12-latin-500.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(""), url("fonts/inter-v12-latin-700.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    </style>
   </head>
 
-  <body class="d-flex h-100 w-100 bg-black text-white" data-bs-spy="scroll" data-bs-target="#navScroll">
+  <body
+    class="d-flex h-100 w-100 bg-black text-white"
+    data-bs-spy="scroll"
+    data-bs-target="#navScroll"
+  >
+    <nav
+      id="navScroll"
+      class="navbar fixed-top px-vw-5 navbar-light bg-light"
+      tabindex="0"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center"
+          href="index.html"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-stack"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"
+            />
+            <path
+              d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"
+            />
+          </svg>
+          <span class="ms-md-1 mt-1 fw-bolder me-md-5">SapiX</span>
+        </a>
 
+        <ul
+          class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal"
+        >
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="index.html" aria-label="Homepage">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="content.html"
+              aria-label="A sample content page"
+            >
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="system.html"
+              aria-label="A system message page"
+            >
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="system.html"
+              aria-label="A system message page"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <div class="toggle-cont">
+          <input
+            class="toggle-input"
+            id="toggle"
+            name="toggle"
+            type="checkbox"
+          />
+          <label class="toggle-label" for="toggle">
+            <div class="cont-icon">
+              <span
+                style="--width: 2; --deg: 25; --duration: 11"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 100; --duration: 18"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 280; --duration: 5"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 200; --duration: 3"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 30; --duration: 20"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 300; --duration: 9"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 250; --duration: 4"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 210; --duration: 8"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 100; --duration: 9"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 15; --duration: 13"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 75; --duration: 18"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 65; --duration: 6"
+                class="sparkle"
+              >
+              </span>
+              <span
+                style="--width: 2; --deg: 50; --duration: 7"
+                class="sparkle"
+              >
+              </span>
+              <span
+                style="--width: 1; --deg: 320; --duration: 5"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 220; --duration: 5"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 215; --duration: 2"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 135; --duration: 9"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 45; --duration: 4"
+                class="sparkle"
+              >
+              </span>
+              <span
+                style="--width: 1; --deg: 78; --duration: 16"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 89; --duration: 19"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 65; --duration: 14"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 2; --deg: 97; --duration: 1"
+                class="sparkle"
+              >
+              </span>
+              <span
+                style="--width: 1; --deg: 174; --duration: 10"
+                class="sparkle"
+              ></span>
+              <span
+                style="--width: 1; --deg: 236; --duration: 5"
+                class="sparkle"
+              ></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 30 30"
+                class="icon"
+              >
+                <path
+                  d="M0.96233 28.61C1.36043 29.0081 1.96007 29.1255 2.47555 28.8971L10.4256 25.3552C13.2236 24.11 16.4254 24.1425 19.2107 25.4401L27.4152 29.2747C27.476 29.3044 27.5418 29.3023 27.6047 29.32C27.6563 29.3348 27.7079 29.3497 27.761 29.3574C27.843 29.3687 27.9194 29.3758 28 29.3688C28.1273 29.3617 28.2531 29.3405 28.3726 29.2945C28.4447 29.262 28.5162 29.2287 28.5749 29.1842C28.6399 29.1446 28.6993 29.0994 28.7509 29.0477L28.9008 28.8582C28.9468 28.7995 28.9793 28.7274 29.0112 28.656C29.0599 28.5322 29.0811 28.4036 29.0882 28.2734C29.0939 28.1957 29.0868 28.1207 29.0769 28.0415C29.0705 27.9955 29.0585 27.9524 29.0472 27.9072C29.0295 27.8343 29.0302 27.7601 28.9984 27.6901L25.1638 19.4855C23.8592 16.7073 23.8273 13.5048 25.0726 10.7068L28.6145 2.75679C28.8429 2.24131 28.7318 1.63531 28.3337 1.2372C27.9165 0.820011 27.271 0.721743 26.7491 0.9961L19.8357 4.59596C16.8418 6.15442 13.2879 6.18696 10.2615 4.70062L1.80308 0.520214C1.7055 0.474959 1.60722 0.441742 1.50964 0.421943C1.44459 0.409215 1.37882 0.395769 1.3074 0.402133C1.14406 0.395769 0.981436 0.428275 0.818095 0.499692C0.77284 0.519491 0.719805 0.545671 0.67455 0.578198C0.596061 0.617088 0.524653 0.675786 0.4596 0.74084C0.394546 0.805894 0.335843 0.877306 0.296245 0.956502C0.263718 1.00176 0.237561 1.05477 0.217762 1.10003C0.152708 1.24286 0.126545 1.40058 0.120181 1.54978C0.120181 1.61483 0.126527 1.6735 0.132891 1.73219C0.15269 1.85664 0.178881 1.97332 0.237571 2.08434L4.41798 10.5427C5.91139 13.5621 5.8725 17.1238 4.3204 20.1099L0.720514 27.0233C0.440499 27.5536 0.545137 28.1928 0.96233 28.61Z"
+                ></path>
+              </svg>
+            </div>
+          </label>
+        </div>
+      </div>
+    </nav>
     <div class="h-100 container-fluid">
       <div class="h-100 row d-flex align-items-stretch">
-        
-          <div class="col-12 col-md-7 col-lg-6 col-xl-5 d-flex align-items-start flex-column px-vw-5">
-          
-            <header class="mb-auto py-vh-2 col-12">
-              <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-    <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
-    <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
-  </svg>
-  <span class="ms-md-1 mt-1 fw-bolder me-md-5">Klar</span>
-</a>
+        <div
+          class="col-12 col-md-7 col-lg-6 col-xl-5 d-flex align-items-start flex-column px-vw-5"
+        >
+          <main class="mb-auto col-12 mb-auto py-vh-5 mt-5">
+            <h1>Register a new account</h1>
 
-            </header>
-            <main class="mb-auto col-12">
-              <h1>Register a new account</h1>
-              
-<form class="row">
-  <div class="col-12">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check py-3">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">If you really don´t want any newsletter <strong>check this box</strong>. Then you just agree to receive our marketing mails and product stuff. If you check this box <strong>we will not send out our newsletter</strong> to you at all...on mondays.</label>
-  </div>
-  <button type="submit" class="btn btn-white btn-xl mb-4">Submit</button>
-</div>
-</form>
-
-            </main>
-          </div>
-          
-            <div class="col-12 col-md-5 col-lg-6 col-xl-7 gradient"></div>
-          
+            <form class="row">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control form-control-lg bg-gray-800 border-dark"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control form-control-lg bg-gray-800 border-dark"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div class="mb-3 form-check py-3">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >If you really don´t want any newsletter
+                    <strong>check this box</strong>. Then you just agree to
+                    receive our marketing mails and product stuff. If you check
+                    this box
+                    <strong>we will not send out our newsletter</strong> to you
+                    at all...on mondays.</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-white btn-xl mb-4">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </main>
         </div>
 
-      </div></body>
-    </html>
+        <div class="col-12 col-md-5 col-lg-6 col-xl-7 gradient"></div>
+      </div>
+    </div>
+
+    <script>
+      // Select the toggle and body
+      const themeToggle = document.getElementById('toggle');
+      const body = document.body;
+      const navbar = document.querySelector('.navbar');
+
+      function setTheme(isChecked) {
+        // Navbar and body
+        if (isChecked) {
+          body.classList.add('bg-black', 'text-white');
+          body.classList.remove('bg-light', 'text-dark');
+          navbar.classList.add('navbar-dark', 'bg-black');
+          navbar.classList.remove('navbar-light', 'bg-light');
+        } else {
+          body.classList.add('bg-light', 'text-dark');
+          body.classList.remove('bg-black', 'text-white');
+          navbar.classList.add('navbar-light', 'bg-light');
+          navbar.classList.remove('navbar-dark', 'bg-black');
+        }
+
+        // Cards
+        document.querySelectorAll('.card').forEach(card => {
+          if (isChecked) {
+            card.classList.add('bg-dark', 'text-white');
+            card.classList.remove('bg-light', 'text-dark');
+          } else {
+            card.classList.add('bg-light', 'text-dark');
+            card.classList.remove('bg-dark', 'text-white');
+          }
+        });
+
+        // Containers
+        document.querySelectorAll('body > .container, body > .container-fluid, main > .container, main > .container-fluid, footer > .container, footer > .container-fluid').forEach(container => {
+          if (isChecked) {
+            container.classList.add('bg-black');
+            container.classList.remove('bg-light');
+          } else {
+            container.classList.add('bg-light');
+            container.classList.remove('bg-black');
+          }
+        });
+
+        // Backgrounds
+        document.querySelectorAll('.bgLayer').forEach(bgLayer => {
+          if (isChecked) {
+            bgLayer.classList.add('bg-black');
+            // bgLayer.classList.add('opacity-75');
+            bgLayer.classList.remove('bg-light');
+          } else {
+            bgLayer.classList.add('bg-light');
+            bgLayer.classList.remove('bg-black');
+            // bgLayer.classList.remove('opacity-75');
+          }
+        });
+
+        // Stripe
+        document.querySelectorAll('.Stripe').forEach(bgLayer => {
+          if (isChecked) {
+            bgLayer.classList.add('bg-black');
+            bgLayer.classList.remove('bg-light');
+          } else {
+            bgLayer.classList.add('bg-light');
+            bgLayer.classList.remove('bg-black');
+          }
+        });
+
+        // Footer
+        document.querySelectorAll('footer').forEach(footer => {
+          if (isChecked) {
+            footer.classList.add('bg-black', 'text-white');
+            footer.classList.remove('bg-light', 'text-dark');
+          } else {
+            footer.classList.add('bg-light', 'text-dark');
+            footer.classList.remove('bg-black', 'text-white');
+          }
+        });
+
+        // Footer background
+        document.querySelectorAll('.footer-theme').forEach(footer => {
+          if (isChecked) {
+            footer.classList.add('bg-black');
+            footer.classList.remove('bg-secondary');
+          } else {
+            footer.classList.add('bg-secondary');
+            footer.classList.remove('bg-black');
+          }
+        });
+
+        // Text elements
+        document.querySelectorAll('.text-theme').forEach(el => {
+          if (isChecked) {
+            el.classList.add('text-white');
+            el.classList.remove('text-dark');
+          } else {
+            el.classList.add('text-dark');
+            el.classList.remove('text-white');
+          }
+        });
+
+        // Card backgrounds
+        document.querySelectorAll('.card-bg-theme').forEach(cardBg => {
+          if (isChecked) {
+            cardBg.classList.add('bg-dark');
+            cardBg.classList.remove('bg-light', 'bg-white');
+          } else {
+            cardBg.classList.add('bg-white');
+            cardBg.classList.remove('bg-dark', 'bg-light');
+          }
+        });
+
+        // Buttons
+        document.querySelectorAll('.btn-theme').forEach(btn => {
+          if (isChecked) {
+            btn.classList.add('btn-light', 'text-dark');
+            btn.classList.remove('btn-dark', 'btn-secondary', 'text-white');
+          } else {
+            btn.classList.add('btn-dark', 'text-white');
+            btn.classList.remove('btn-light', 'btn-secondary', 'text-dark');
+          }
+        });
+      }
+
+      themeToggle.addEventListener('change', function() {
+        setTheme(this.checked);
+        localStorage.setItem('theme', this.checked ? 'dark' : 'light');
+      });
+
+      window.addEventListener('DOMContentLoaded', function() {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light') {
+          themeToggle.checked = false;
+          setTheme(false);
+        } else {
+          themeToggle.checked = true;
+          setTheme(true);
+        }
+      });
+    </script>
+  </body>
+</html>
