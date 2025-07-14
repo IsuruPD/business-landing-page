@@ -86,11 +86,11 @@
     data-bs-target="#navScroll"
   >
     <nav
-      id="navScroll"
-      class="navbar fixed-top px-vw-5 navbar-light bg-light"
-      tabindex="0"
+    id="navScroll"
+    class="navbar fixed-top px-vw-5 navbar-light bg-light"
+    tabindex="0"
     >
-      <div class="container">
+      <div class="container d-flex align-items-center justify-content-between">
         <a
           class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center"
           href="index.html"
@@ -113,44 +113,46 @@
           <span class="ms-md-1 mt-1 fw-bolder me-md-5">SapiX</span>
         </a>
 
-        <ul
-          class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal"
-        >
-          <li class="nav-item">
-            <a class="nav-link fs-5" href="index.html" aria-label="Homepage">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link fs-5"
-              href="content.html"
-              aria-label="A sample content page"
-            >
-              Products
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link fs-5"
-              href="system.html"
-              aria-label="A system message page"
-            >
-              About
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link fs-5"
-              href="system.html"
-              aria-label="A system message page"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        <div class="flex-grow-1 d-flex justify-content-center">
+          <ul
+            class="navbar-nav mb-2 mb-lg-0 list-group list-group-horizontal"
+          >
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="index.html" aria-label="Homepage">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5"
+                href="content.html"
+                aria-label="A sample content page"
+              >
+                Products
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5"
+                href="system.html"
+                aria-label="A system message page"
+              >
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5"
+                href="system.html"
+                aria-label="A system message page"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <div class="toggle-cont">
+        <div class="toggle-cont d-flex align-items-center ms-3">
           <input
             class="toggle-input"
             id="toggle"
