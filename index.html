@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/theme.min.css" />
     <link rel="stylesheet" href="css/theme.css" />
 
+    
     <style>
       /* inter-300 - latin */
       @font-face {
@@ -54,6 +55,13 @@
             url("fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
       }
     </style>
+    
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>   
+
+    <!-- <link rel="stylesheet" href="css/jquery.flipster.css" /> -->
   </head>
 
   <body
@@ -61,22 +69,16 @@
     data-bs-spy="scroll"
     data-bs-target="#navScroll"
   >
+    <!-- Navbar -->
     <div id="navbar-placeholder"></div>
+
     <main>
-      <div
-        class="w-100 overflow-hidden position-relative bg-light text-white"
-        data-aos="fade"
-      >
+      <!-- Hero -->
+      <div class="w-100 overflow-hidden position-relative bg-light text-white" data-aos="fade">
       <!--  -->
-        <div
-          class="position-absolute w-100 h-100 bg-light top-0 start-0 bgLayer"
-        ></div>
-        <div
-          class="container py-vh-4 position-relative mt-5 px-vw-5 text-center"
-        >
-          <div
-            class="row d-flex align-items-center justify-content-center py-vh-5"
-          >
+        <div class="position-absolute w-100 h-100 bg-light top-0 start-0 bgLayer"></div>
+        <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
+          <div class="row d-flex align-items-center justify-content-center py-vh-5">
             <div class="col-12 col-xl-10">
               <span class="h5 text-secondary fw-lighter text-theme">At Sapix,</span>
               <h1 class="display-huge mt-3 mb-3 lh-1 text-theme">                
@@ -111,9 +113,8 @@
         </div>
       </div>
 
-      <div
-        class="w-100 position-relative bg-light text-white bg-cover d-flex align-items-center"
-      >
+      <!-- Showcase -->
+      <div class="w-100 position-relative bg-light text-white bg-cover d-flex align-items-center">
         <div class="container-fluid px-vw-5 Stripe">
           <div
             class="position-absolute w-100 h-50 bg-light bottom-0 start-0 bgLayer"
@@ -156,6 +157,9 @@
           </div>
         </div>
       </div>
+
+
+      <!-- Company Brief -->
       <div class="bg-light bgLayer">
         <div class="container px-vw-5 py-vh-5">
           <div class="row d-flex align-items-center">
@@ -218,6 +222,39 @@
         </div>
       </div>
 
+      <!-- Product Types -->
+      <div class="bg-light position-relative bgLayer">
+        <div class="container px-vw-5 py-vh-5">
+          <div class="row d-flex align-items-center">
+            <article id="demo-default" class="demo">
+
+              <h2 class="h5 text-secondary fw-lighter text-theme text-center pb-5">Product Range</h2>
+          
+              <div id="coverflow">
+                  <ul class="flip-items">
+                      <li data-flip-title="Red">
+                          <img src="img/text1.gif">
+                      </li>
+                      <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                          <img src="img/text2.gif">
+                      </li>
+                      <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                          <img src="img/text3.gif">
+                      </li>
+                      
+                  </ul>
+              </div>
+          
+              <script>
+                  var coverflow = $("#coverflow").flipster();
+              </script>
+            </article> 
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Experience -->
       <div class="bg-light py-vh-3 bgLayer">
         <div class="container bg-black px-vw-5 py-vh-3 rounded-5 bgLayer">
           <div class="row gx-5">
@@ -344,6 +381,7 @@
       </div>
 
 
+      <!-- Edge -->
       <div class="bg-light position-relative bgLayer">
         <div class="container px-vw-5 py-vh-5">
           <div class="row d-flex align-items-center">
@@ -367,7 +405,6 @@
                 data-aos="zoom-in-up"
               />
             </div>
-            <!-- <div class="col-12 col-lg-5 bg-dark rounded-5 py-5 bg-dark shadow card-theme card-bg-theme" data-aos="fade"> -->
               <div class="col-12 col-lg-5 mt-5 py-5" data-aos="zoom-in-left">
               <span class="h5 text-secondary fw-lighter text-theme"
                 >Our edge, your advantage</span
@@ -382,6 +419,8 @@
         </div>
       </div>
 
+      
+      <!-- Inquire -->
       <div class="bg-light bgLayer">
         <div class="container px-vw-5 py-vh-5">
           <div class="row d-flex align-items-center">
@@ -429,6 +468,8 @@
         </div>
       </div>
 
+
+      <!-- Service Brief -->
       <div class="container-fluid px-vw-5 position-relative bgLayer" data-aos="fade">
         <div class="position-absolute w-100 h-50 bg-light top-0 start-0 bgLayer"></div>
         <div
@@ -499,9 +540,12 @@
         </div>
       </div>
 
+      
+      <!-- Reviews -->
       <div class="bg-light py-vh-5 bgLayer">
         <div class="container px-vw-5">
           <div class="row d-flex gx-5 align-items-center">
+            <!-- l1 -->
             <div class="col-12 col-lg-6">
 <!--  -->
               <div
@@ -598,11 +642,8 @@
                   </div>
                 </div>
               </div>
-<!--  -->
-              <div
-                class="rounded-5 p-5 shadow mt-5 card-theme bg-dark card-bg-theme"
-                data-aos="zoom-in-right"
-              >
+            <!--  -->
+              <div class="rounded-5 p-5 shadow mt-5 card-theme bg-dark card-bg-theme" data-aos="zoom-in-right">
                 <div class="bg-dark card-bg-theme">
                   <div class="fs-1">
                     <svg
@@ -693,9 +734,9 @@
                   </div>
                 </div>
               </div>
-<!--  -->              
             </div>
-
+            
+            <!-- l2 -->
             <div class="col-12 col-lg-6">
               <div class="p-5 pt-0" data-aos="fade">
                 <span class="h5 text-secondary fw-lighter text-theme"
@@ -802,19 +843,23 @@
         </div>
       </div>
     </main>
-  
+
+    <!-- Footer -->
     <div id="footer-placeholder"></div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/scrollPos.js"></script>
+    <script src="js/themeToggle.js"></script>
+    <script src="js/includeFooter.js"></script>
+    <script src="js/includeNavbar.js"></script>
+    <script>
+        var coverflow = $("#coverflow").flipster();
+    </script>
     <script>
       AOS.init({
         duration: 800, // values from 0 to 3000, with step 50ms
       });
     </script>
-    <script src="js/scrollPos.js"></script>
-    <script src="js/themeToggle.js"></script>
-    <script src="js/includeFooter.js"></script>
-    <script src="js/includeNavbar.js"></script>
   </body>
 </html>
