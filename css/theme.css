@@ -11247,3 +11247,12 @@ img {
     font-size: 0.8rem;
   }
 }
+
+.carousel-card {
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  /* border-radius: 16px; */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
