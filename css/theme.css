@@ -395,7 +395,9 @@ progress {
 
 .lead {
   font-size: calc(1.2846rem + 0.4152vw);
-  font-weight: 300; }  .navbar-light a.nav-link {
+  font-weight: 300; }  
+  
+  .navbar-light a.nav-link {
     color: #111;
     border-bottom: 2px solid transparent;
     margin: 0 1rem;
