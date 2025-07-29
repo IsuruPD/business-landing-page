@@ -11279,6 +11279,13 @@ img {
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
+
+
+
+
+
+
+
 /* IBMS Section */
 .article {
   height: 100vh;
@@ -11324,9 +11331,30 @@ img {
   background-color: #f8f9fa;
 }
 
+.tab-layout .icon {
+  margin-top: 0.25rem;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #CACFD6;
+  background-size: 64px 32px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Default icon colors - both fill and stroke */
+.tabs label .icon {
+  fill: #C5C5C5;
+  stroke: #C5C5C5;
+}
+
+/* Icon color changes on hover */
 .tabs label:hover .icon {
   border-color: #3498db;
   background-position: -50px 0;
+  fill: #3498db;
+  stroke: #3498db;
 }
 
 .tabs label span {
@@ -11346,6 +11374,13 @@ img {
   left: 50%;
   transform: translateX(-50%); */
   z-index: 10;
+}
+
+.tab-view-image{
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* .tab__content p {
@@ -11390,6 +11425,8 @@ img {
 .tabs [id^="tab"]:checked + label .icon {
   border-color: #3498db;
   background-position: -50px 0;
+  fill: #3498db;
+  stroke: #3498db;
 }
 
 /* Show corresponding content */
@@ -11404,41 +11441,7 @@ img {
   display: block;
 }
 
-.tab-layout .icon {
-  margin-top: 0.25rem;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 2px solid #CACFD6;
-  background-size: 64px 32px;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-}
 
-.email-cal {
-  background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_sync.png');
-  background-position: 0 0;
-  background-size: 64px 32px;
-}
-
-.snapshot {
-  background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_snapshots.png');
-  background-size: 64px 32px;
-  background-position: 0 0;
-}
-
-.inbox-apps {
-  background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_templates.png');
-  background-size: 64px 32px;
-  background-position: 0 0;
-}
-
-.log-calls {
-  background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_log_call.png');
-  background-size: 64px 32px;
-  background-position: 0 0;
-}
 
 /* Responsive breakpoints */
 @media (min-width: 480px) {
@@ -11501,7 +11504,6 @@ img {
   }
 }
 
-/* Ensure tabs container has enough space for content */
 .tabs {
-  margin-bottom: 300px; /* Adjust based on your content height */
+  margin-bottom: 300px;
 }
