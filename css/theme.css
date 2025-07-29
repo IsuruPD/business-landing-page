@@ -11278,3 +11278,230 @@ img {
   /* border-radius: 16px; */
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
+
+/* IBMS Section */
+.article {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tabs:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.tabs input[type=radio] {
+  display: none;
+}
+
+.tabs label {
+  display: inline-block;
+  flex: 1;
+  color: #ccc;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 3px solid transparent;
+  background-color: #fff;
+  margin: 0;
+  min-width: 0;
+}
+
+.tabs label:hover {
+  color: #3498db;
+  background-color: #f8f9fa;
+}
+
+.tabs label:hover .icon {
+  border-color: #3498db;
+  background-position: -50px 0;
+}
+
+.tabs label span {
+  display: none;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.tab__content {
+  display: none;
+  text-align: left;
+  width: 100%;
+  background-color: #e9ecef;
+  /* position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); */
+  z-index: 10;
+}
+
+/* .tab__content p {
+  margin-bottom: 1.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.tab__content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+ */
+.tab__content * {
+  animation: scale 0.3s ease-in-out;
+}
+
+@keyframes scale {
+  0% {
+      transform: scale(0.95);
+      opacity: 0;
+  }
+  50% {
+      transform: scale(1.02);
+      opacity: 0.7;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Tab selection states */
+.tabs [id^="tab"]:checked + label {
+  background: #fff;
+  color: #3498db;
+  border-bottom-color: #3498db;
+  box-shadow: 0 -2px 5px rgba(52, 152, 219, 0.1);
+}
+
+.tabs [id^="tab"]:checked + label .icon {
+  border-color: #3498db;
+  background-position: -50px 0;
+}
+
+/* Show corresponding content */
+.tabs #tab1:checked ~ #tab__content--1,
+.tabs #tab2:checked ~ #tab__content--2,
+.tabs #tab3:checked ~ #tab__content--3,
+.tabs #tab4:checked ~ #tab__content--4,
+.tabs #tab5:checked ~ #tab__content--5,
+.tabs #tab6:checked ~ #tab__content--6,
+.tabs #tab7:checked ~ #tab__content--7,
+.tabs #tab8:checked ~ #tab__content--8 {
+  display: block;
+}
+
+.tab-layout .icon {
+  margin-top: 0.25rem;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #CACFD6;
+  background-size: 64px 32px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.email-cal {
+  background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_sync.png');
+  background-position: 0 0;
+  background-size: 64px 32px;
+}
+
+.snapshot {
+  background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_snapshots.png');
+  background-size: 64px 32px;
+  background-position: 0 0;
+}
+
+.inbox-apps {
+  background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_templates.png');
+  background-size: 64px 32px;
+  background-position: 0 0;
+}
+
+.log-calls {
+  background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_log_call.png');
+  background-size: 64px 32px;
+  background-position: 0 0;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 480px) {
+  .tabs label span {
+      display: block;
+  }
+  
+  .tabs label {
+      padding: 0.75rem 0.5rem;
+  }
+  
+  .icon {
+      width: 36px;
+      height: 36px;
+      background-size: 72px 36px;
+  }
+  
+  .email-cal, .snapshot, .inbox-apps, .log-calls {
+      background-size: 72px 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tabs label {
+      padding: 1rem 0.75rem;
+  }
+  
+  .tabs label span {
+      font-size: 0.85rem;
+  }
+  
+  .tab-layout .icon {
+      width: 40px;
+      height: 40px;
+      background-size: 80px 40px;
+  }
+  
+  .email-cal, .snapshot, .inbox-apps, .log-calls {
+      background-size: 80px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tabs label {
+      padding: 1.25rem 1rem;
+  }
+  
+  .tabs label span {
+      font-size: 0.9rem;
+  }
+  
+  .tab-layout .icon {
+      width: 44px;
+      height: 44px;
+      background-size: 88px 44px;
+  }
+  
+  .email-cal, .snapshot, .inbox-apps, .log-calls {
+      background-size: 88px 44px;
+  }
+}
+
+/* Ensure tabs container has enough space for content */
+.tabs {
+  margin-bottom: 300px; /* Adjust based on your content height */
+}
