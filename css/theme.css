@@ -11507,3 +11507,7 @@ img {
 .tabs {
   margin-bottom: 300px;
 }
+
+.tabProductMod{
+  list-style-type: none;
+}
