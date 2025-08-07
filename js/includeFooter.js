@@ -100,4 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             >
         </div>
         </footer>`
+    if (typeof window.initThemeToggle === 'function') {
+      window.initThemeToggle();
+    }
 }); 
