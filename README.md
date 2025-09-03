@@ -1,6 +1,6 @@
-# SapiX Business Landing Page
+# Business Landing Page
 
-A modern, responsive business landing page for SapiX - a software development company specializing in digital solutions, building management systems, and enterprise applications.
+A modern, responsive business landing page for a software development company specializing in digital solutions, building management systems, and enterprise applications.
 
 ## 🌟 Features
 
@@ -16,7 +16,7 @@ A modern, responsive business landing page for SapiX - a software development co
 
 ## 🚀 Live Demo
 
-Visit the live demo: [SapiX Demo](https://www.sapix-site.com/demo)
+Visit the live demo: [Site Demo](https://www.sample-site.com/demo)
 
 ## 🛠️ Technologies Used
 
@@ -164,23 +164,9 @@ business-landing-page/
 - Update documentation for significant changes
 - Optimize images and assets before committing
 
-## 📝 License
-
-This project is private and proprietary to SapiX. All rights reserved.
-
-## 📞 Support
-
-For questions, issues, or feature requests:
-
-- **Website**: [SapiX Official Site](https://www.sapix-site.com)
-- **Demo**: [Live Demo](https://www.sapix-site.com/demo)
-- **Email**: Contact through the website contact form
-
 ## 🔄 Version History
 
 - **v1.0**: Initial release with core functionality
 - **Current**: Multi-page architecture with client showcases and product demonstrations
 
 ---
-
-**Built with ❤️ by the SapiX Team**
